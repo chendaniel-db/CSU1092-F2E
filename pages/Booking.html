@@ -1,0 +1,173 @@
+﻿<!doctype html>
+<html lang="zh-tw">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS + Sweetalert2 11.0.16 + Animate 4.1.1 + Title + Customized CSS + ICON -->
+    <link href="../bootstrap 4.6/css/bootstrap.css" rel="stylesheet" />
+    <link href="../bootstrap 4.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../package/sweetalert2 11.0.16/package/dist/sweetalert2.css" rel="stylesheet" />
+    <link href="../package/animate 4.1.1/animate.min.css" rel="stylesheet" />
+    <link href="../customized/css/Booking.css" rel="stylesheet" />
+    <link rel="icon" href="../image/icon/icon01.ico" type="image/x-icon" />
+    <title>旅行團報名作業系統</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid jumbotron-image">
+            <div class="container">
+                <h1 class="display-4 text-center" style="color:white">放鬆心靈的最佳時機</h1>
+                <p class="lead text-center" style="color:white">
+                    美食、海洋、陽光，準備好渡假的心情，盡情倘佯在這海角樂園吧！
+                </p>
+            </div>
+        </div>
+
+        <form>
+
+            <div class="card border-zero">
+                <div class="card-header text-center card-color-1" style="font-size:23px">基 本 資 料</div>
+                <div class="card-body card-color-2">
+
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="uname">姓名</label>
+                            <input type="text" class="form-control" id="uname" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">
+                                您所提供的基本資料僅供本次旅遊使用<br>
+                                將會依照個資法進行處理，絕對不會外洩，請您放心！
+                            </small>
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="bdate">生日</label>
+                            <input type="date" class="form-control" id="bdate">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+
+                            <label for="gender">性別</label>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="male" value="1" checked>
+                                <label class="form-check-label" for="male">男生</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input form-check-inline" type="radio" name="exampleRadios" id="female" value="2">
+                                <label class="form-check-label" for="female">女生</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="mobile">手機</label>
+                            <input type="text" class="form-control" id="mobile" aria-describedby="mobile">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="homephone">市話</label>
+                            <input type="text" class="form-control" id="homephone">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="officephone">公司電話</label>
+                            <input type="text" class="form-control" id="officephone">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <label for="address">住址</label>
+                            <input type="text" class="form-control" id="address" aria-describedby="address">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card mt-3 border-zero">
+                <div class="card-header text-center card-color-1" style="font-size:23px">行 程 資 訊</div>
+                <div class="card-body card-color-2">
+
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="startdate">想要的出發日區間 起</label>
+                            <input type="date" class="form-control" id="startdate" aria-describedby="startdate">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="enddate">想要的出發日區間 迄</label>
+                            <input type="date" class="form-control" id="enddate">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="joinGroup">超值台灣旅遊五日遊</label>
+                            <select class="form-control">
+                                <option>台灣北部城市遊</option>
+                                <option>台灣西部城市遊</option>
+                                <option>台灣南部風情遊</option>
+                                <option>台灣東部風情遊</option>
+                                <option>台灣離島風情遊</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+
+                            <label for="joinGroup">可接受之交通工具航班</label>
+
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="rgrb">
+                                <label class="custom-control-label" for="rgrb">早出早回</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="rgnb">
+                                <label class="custom-control-label" for="rgnb">早出晚回</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="ngrb">
+                                <label class="custom-control-label" for="ngrb">晚出早回</label>
+                            </div>
+
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="ngnb">
+                                <label class="custom-control-label" for="ngnb">晚出晚回</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <button type="button" class="btn btn-primary" onclick="OKMessenger()">送出資料</button>
+                            <button type="reset" class="btn btn-primary" onclick="resetMessenger()">清除資料</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- jQuery + Bootstrap Bundle + Popper + Sweetalert2-->
+    <script src="../package/jQuery 3.6.0/jquery-3.6.0.js"></script>
+    <script src="../bootstrap 4.6/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap 4.6/js/bootstrap.bundle.js"></script>
+    <script src="../package/sweetalert2 11.0.16/package/dist/sweetalert2.all.js"></script>
+    <script src="../customized/js/Booking.js"></script>
+
+</body>
+</html>

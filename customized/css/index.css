@@ -1,0 +1,15 @@
+﻿.carousel-image-80dark {
+    border-radius: 30px;
+    -webkit-filter: brightness(80%);
+    height: 500px;
+}
+
+.carousel-image-90dark {
+    border-radius: 30px;
+    -webkit-filter: brightness(90%);
+    height: 500px;
+}
+
+.row-image {
+    border-radius: 10px;
+}

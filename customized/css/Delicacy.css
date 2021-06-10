@@ -1,0 +1,10 @@
+﻿.jumbotron-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('../../image/Delicacy/手繪美食.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.row-image {
+    border-radius: 30px;
+}
