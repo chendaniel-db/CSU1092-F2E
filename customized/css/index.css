@@ -12,6 +12,8 @@
 
 .row-image {
     border-radius: 10px;
+    background: none;
+    border:0;
 }
 
 .footer {
@@ -36,4 +38,15 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #BEBEBE;
     border-radius: 100px;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+}
+
+.bear-radius {
+    border-radius: 20px;
 }

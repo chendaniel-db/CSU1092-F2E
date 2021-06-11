@@ -11,7 +11,7 @@
     <link href="package/sweetalert2 11.0.16/package/dist/sweetalert2.css" rel="stylesheet" />
     <link href="package/animate 4.1.1/animate.min.css" rel="stylesheet" />
     <link href="customized/css/index.css" rel="stylesheet" />
-    <link rel="icon" href="image/icon/icon01.ico" type="image/x-icon" />
+    <link rel="icon" href="image/icon/solar-energy.ico" type="image/x-icon" />
     <title>丹尼爾的旅遊小達人 · 首頁</title>
 
 </head>
@@ -19,43 +19,42 @@
 <body onload="Tips()">
 
     <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light index-head sticky-top">
+                <a class="navbar-brand" href="index.html">丹尼爾的旅遊小達人</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light index-head">
-            <a class="navbar-brand" href="index.html">丹尼爾的旅遊小達人</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
 
-                <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
+                        </li>
 
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">首頁<span class="sr-only">(current)</span></a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/Booking.html">台灣旅遊報名系統</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/Booking.html">台灣旅遊報名系統</a>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                台灣的特色
+                            </a>
+                            <div class="dropdown-menu index-head" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="pages/Delicacy.html">台灣的美食</a>
+                                <a class="dropdown-item" href="#">台灣的古蹟</a>
+                                <a class="dropdown-item" href="#">台灣的景點</a>
+                            </div>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            台灣的特色
-                        </a>
-                        <div class="dropdown-menu index-head" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="pages/Delicacy.html">台灣的美食</a>
-                            <a class="dropdown-item" href="#">台灣的古蹟</a>
-                            <a class="dropdown-item" href="#">台灣的景點</a>
-                        </div>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/About.html">關於我們</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/About.html">關於我們</a>
-                    </li>
-
-                </ul>
-            </div>
-        </nav>
+                    </ul>
+                </div>
+            </nav>
 
         <div id="carouselExampleCaptions" class="carousel slide mt-3" data-ride="carousel">
 
@@ -117,15 +116,17 @@
             <div class="card col-sm-4 row-image" style="width: 18rem;">
                 <img src="image/index/古蹟.jpg" class="card-img-top row-image mt-3" alt="古蹟">
                 <div class="card-body">
-                    <h5 class="card-title">台灣的古蹟</h5>
-                    <p class="card-text" style="font-weight:bold">Monuments in Taiwan</p>
+                    <h5 class="card-title text-center">台灣的古蹟</h5>
+                    <p class="card-text text-center" style="font-weight:bold">Monuments in Taiwan</p>
                     <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#Historicsite" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            詳細內容
-                        </a>
+                        <div class="text-center">
+                            <a class="btn btn-info" data-toggle="collapse" href="#Historicsite" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                詳細內容
+                            </a>
+                        </div>
                     </p>
-                    <div class="collapse" id="Historicsite">
-                        <div class="card card-body">
+                    <div class="collapse text-center" id="Historicsite">
+                        <div class="card card-body row-image">
                             臺灣在漫長的歷史演進過程裡，留下許多古老的建築。這些建築見證了一個又一個時期裡所經過的事情，也代表著不同族群的生活情況，它們經過了時間的考驗而留存下來，我們稱為「古蹟」。
                         </div>
                     </div>
@@ -135,15 +136,17 @@
             <div class="card col-sm-4 row-image" style="width: 18rem;">
                 <img src="image/index/美食.jpg" class="card-img-top row-image mt-3" alt="美食">
                 <div class="card-body">
-                    <h5 class="card-title">台灣的美食</h5>
-                    <p class="card-text" style="font-weight:bold">Taiwan's delicious food</p>
+                    <h5 class="card-title text-center">台灣的美食</h5>
+                    <p class="card-text text-center" style="font-weight:bold">Taiwan's delicious food</p>
                     <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#Delicacy" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            詳細內容
-                        </a>
+                        <div class="text-center">
+                            <a class="btn btn-info btn-center-set" data-toggle="collapse" href="#Delicacy" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                詳細內容
+                            </a>
+                        </div>
                     </p>
                     <div class="collapse" id="Delicacy">
-                        <div class="card card-body">
+                        <div class="card card-body row-image text-center">
                             夜市是臺灣非常特殊有趣的文化，在夜市可以吃到琳琅滿目的小吃美食，每個夜市都有不同的特色與風味，品嚐小吃，可以更認識地方特產、文化故事，享受臺灣特有的旅遊風采喔！
                         </div>
                     </div>
@@ -153,15 +156,17 @@
             <div class="card col-sm-4 row-image" style="width: 18rem;">
                 <img src="image/index/景點.jpg" class="card-img-top row-image mt-3" alt="景點">
                 <div class="card-body">
-                    <h5 class="card-title">台灣的景點</h5>
-                    <p class="card-text card-english" style="font-weight:bold">Landscape of taiwan</p>
+                    <h5 class="card-title text-center">台灣的景點</h5>
+                    <p class="card-text card-english text-center" style="font-weight:bold">Landscape of taiwan</p>
                     <p>
-                        <a class="btn btn-primary" data-toggle="collapse" href="#Landscape" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            詳細內容
-                        </a>
+                        <div class="text-center">
+                            <a class="btn btn-info" data-toggle="collapse" href="#Landscape" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                詳細內容
+                            </a>
+                        </div>
                     </p>
                     <div class="collapse" id="Landscape">
-                        <div class="card card-body">
+                        <div class="card card-body row-image text-center">
                             臺灣以高山聳立聞名國際，是個有名的『高山島嶼』。三千公尺以上的高山，比比皆是，而將近四千公尺的玉山，更是東北亞的第一高峰。也因地理資源的豐沛，臺灣擁有許多特殊地形及奇特的地理景觀。
                         </div>
                     </div>
@@ -178,7 +183,7 @@
             </div>
 
             <div class="col-sm-3">
-                <img src="image/index/台灣黑熊.png" class="w-100 blink">
+                <img src="image/index/台灣黑熊re.png" class="w-100 blink bear-radius">
             </div>
 
         </div>
@@ -191,7 +196,7 @@
                 網站一切皆為教育為主軸，絕無商業及個人利益，並且以 <a class="text-dark" href="https://github.com/chendaniel-db">GitHub</a> 來架站。
 
             </div>
-            
+
         </footer>
 
     </div>

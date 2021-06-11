@@ -7,16 +7,15 @@
 
 .border-zero {
     border: 0px;
+    border-radius:30px;
 }
 
 .card-color-1 {
-    /*Gradual Setting = #e6e9f0→#eef1f5 and 360 degrees*/
     background-image: linear-gradient(360deg, #e6e9f0 0%, #eef1f5 100%);
     border: 0px;
 }
 
 .card-color-2 {
-    /*Gradual Setting = #e6e9f0→#eef1f5 and 180 degrees*/
     background-image: linear-gradient(180deg, #e6e9f0 0%, #eef1f5 100%);
     border-radius: 0px 0px 10px 10px;
 }
@@ -43,4 +42,12 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
     background-color: #BEBEBE;
     border-radius: 100px;
+}
+
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
