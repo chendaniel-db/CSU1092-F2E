@@ -18,3 +18,9 @@
         footer: '這則通知將於 5 秒後自動關閉 或 手動點擊按鈕進行關閉',
     })
 }
+
+//Get Internet IP Script
+$.getJSON("https://ipinfo.io", function (response) {
+
+    $("#myip").html(response.ip);
+})
