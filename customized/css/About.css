@@ -12,6 +12,19 @@ body {
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
 }
 
+    body::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #F0F0F0;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #BEBEBE;
+        border-radius: 100px;
+    }
+
 .about-section {
     background: url('../../image/About US/IMG_0927.JPG') no-repeat right;
     background-size: 55%;
