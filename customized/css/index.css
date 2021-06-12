@@ -50,3 +50,10 @@ body {
 .bear-radius {
     border-radius: 20px;
 }
+
+.row-marquee {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+}
