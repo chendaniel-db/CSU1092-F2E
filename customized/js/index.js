@@ -36,5 +36,3 @@ function ShowTime()
             document.getElementById('showbox').innerHTML = '系統目前時間：' + NowDate.toLocaleString() + '（' + dayNames[d] + '）';
             setTimeout('ShowTime()', 1);
 }
-
-$("#loading").fadeOut(3000)
