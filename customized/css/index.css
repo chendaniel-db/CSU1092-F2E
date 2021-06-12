@@ -50,14 +50,3 @@ body {
 .bear-radius {
     border-radius: 20px;
 }
-
-
-.navbar-icon {
-    animation: navbaricon 1s infinite linear normal none running;
-}
-
-@keyframes navbaricon {
-    100% {
-        transform: rotate(360deg);
-    }
-}
