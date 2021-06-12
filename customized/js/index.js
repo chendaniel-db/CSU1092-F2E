@@ -1,4 +1,6 @@
-﻿function Tips() {
+﻿const { show } = require("../../package/sweetalert2 11.0.16/package/src/utils/dom");
+
+function Tips() {
     Swal.fire({
         title: '貼心小提醒',
         text: '防疫新生活，共同來對抗新冠肺炎，共同創造美好生活',
