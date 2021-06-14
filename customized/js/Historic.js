@@ -1,6 +1,6 @@
-﻿//Get Internet IP Script
-$.getJSON("https://ipinfo.io", function (response) {
-
+﻿$.getJSON("https://ipinfo.io", function (response) {
+    $("#mycity").html(response.city);
+    $("#myregion").html(response.region);
     $("#myip").html(response.ip);
 })
 
