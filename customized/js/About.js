@@ -38,7 +38,7 @@ $(window).scroll(function (event) {
     }
 });
 
-$('a').click(function () {
+$('.go-top').click(function () {
     $('html, body').animate({
         scrollTop: $($(this).attr('href')).offset().top
     }, 1000);
