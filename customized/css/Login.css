@@ -6,7 +6,7 @@ body {
 
 .main-section {
     margin: 0 auto;
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 0;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .user-img {
-    margin-top: -60px;
+    margin-top: -40px;
     margin-bottom: 45px;
 }
 
@@ -65,7 +65,7 @@ body {
     margin: 5px 0 25px;
 }
 
-.btn-success {
+.btn-primary {
     background-color: #1c6288;
     font-size: 19px;
     border-radius: 5px;
@@ -73,12 +73,12 @@ body {
     border: 1px solid #daf1ff;
 }
 
-    .btn-success:hover {
+    .btn-primary:hover {
         background-color: #13445e;
         border: 1px solid #daf1ff;
     }
 
-.btn-warning {
+.btn-danger {
     background-color: #CE0000;
     font-size: 19px;
     color: white;
@@ -87,8 +87,23 @@ body {
     border: 1px solid #daf1ff;
 }
 
-    .btn-warning:hover {
+    .btn-danger:hover {
         background-color: #750000;
+        color: white;
+        border: 1px solid #daf1ff;
+    }
+
+.btn-warning {
+    background-color: #AE8F00;
+    font-size: 19px;
+    color: white;
+    border-radius: 5px;
+    padding: 7px 14px;
+    border: 1px solid #daf1ff;
+}
+
+    .btn-warning:hover {
+        background-color: #796400;
         color: white;
         border: 1px solid #daf1ff;
     }
@@ -96,4 +111,12 @@ body {
 .title {
     color: white;
     font-size: 40px;
+}
+
+.logininfo {
+    color:white;
+}
+
+.footercolor{
+    color:white;
 }

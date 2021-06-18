@@ -13,12 +13,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/solid.css">
     <link href="../customized/css/Login.css" rel="stylesheet" />
     <link rel="icon" href="../image/icon/solar-energy.ico" type="image/x-icon" />
-    <title>丹尼爾的旅遊小達人 · ERP</title>
+    <title>丹尼爾科技 DPlus+ · 單簽SSO</title>
     <noscript>Your browser does not support JavaScript!</noscript>
     <noscript>你的瀏覽器不支持Javascript，請更換瀏覽器或是打開Javascript！</noscript>
 
 </head>
-<body>
+
+<body onload="ShowTime()">
 
     <div class="modal-dialog text-center">
         <div class="col-sm-9 main-section">
@@ -39,15 +40,18 @@
                         <div class="form-group">
                             <input type="password" class="form-control" placeholder="請輸入您的密碼" id="uPass">
                         </div>
-                        <button type="submit" class="btn btn-success" onclick="ulogin()"><b>登入系統</b></button>
-                        <button type="reset" class="btn btn-warning"><b>清除資料</b></button>
-                        <p id="logininfo" style="color:white">歡迎使用 企業管理系統 ERP</p>
+                        <button type="reset" class="btn btn-danger" onclick="f5()"><b>清除資料</b></button>
+                        <button type="submit" class="btn btn-primary" onclick="ulogin()"><b>登入系統</b></button>
+                        <a class="btn btn-warning" href="../index.html" role="button">回首頁</a><br><br>
+                        <p id="logininfo" class="logininfo">歡迎使用 企業管理系統 ERP</p>
                     </iform>
                 </div>
             </div>
-            <br>
-            <p style="color:white">建議使用公司內網登入可以降低風險</p>
-            <p style="color:white">Copyright © 2021 <a class="text-white" href="https://github.com/chendaniel-db">Chen Jian Yi</a>  All Rights Reserved.</p>
+            <a class="footercolor">&ensp;IP位置：</a>
+            <a id="myip" class="footercolor"></a><br>
+            <a class="footercolor">建議使用公司內網登入可以降低傳輸風險</a><br>
+            <a id="showbox" class="footercolor"></a><br>
+            <p class="footercolor">Copyright © 2021 <a class="footercolor" href="https://github.com/chendaniel-db">Chen Jian Yi</a>  All Rights Reserved.</p>
         </div>
     </div>
 
@@ -57,47 +61,8 @@
     <script src="../bootstrap 4.6/js/bootstrap.bundle.js"></script>
     <script src="../package/sweetalert2 11.0.16/package/dist/sweetalert2.all.js"></script>
     <script src="../package/popper/popper.min.js"></script>
+    <script src="../customized/js/Login.js"></script>
 
-    <script language="javascript" type="text/javascript">
-
-        var time = 5;
-        var i = 0;
-
-        function Redirect() {
-            window.location = "../index.html";
-        }
-
-        function ulogin() {
-            var userName = document.getElementById("uName").value;
-            var userPass = document.getElementById("uPass").value;
-
-
-            if (userPass == "root" && userName == "root") {
-                document.getElementById("logininfo").innerHTML = "登入成功 即將導向內部系統";
-                timer = setTimeout('Redirect()', time * 1000);
-            }
-
-            else if (userName == "" || userName == null) {
-                document.getElementById("logininfo").innerHTML = "使用者名稱不能為空";
-                return false;
-            }
-
-            else if (userPass == "" || userPass == null) {
-                document.getElementById("logininfo").innerHTML = "使用者密碼不能為空";
-                return false;
-            }
-
-            else if (userPass != "root" || userName != "root") {
-                document.getElementById("logininfo").innerHTML = "使用者名稱或密碼錯誤";
-                return false;
-            }
-
-            else {
-                return true;
-            }
-        }
-
-    </script>
 </body>
 </html>
 
