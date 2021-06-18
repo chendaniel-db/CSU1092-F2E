@@ -55,7 +55,7 @@ function ShowTime() {
 function Tips() {
     Swal.fire({
         title: 'ERP SSO企業管理系統單簽測試',
-        text: '測試帳號：guest 測試密碼：csudemo',
+        text: '測試帳號：csudemo 測試密碼：guest',
         confirmButtonText: '關閉',
         showCloseButton: true,
         showClass: {
