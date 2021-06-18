@@ -2,7 +2,7 @@
 var i = 0;
 
 function Redirect() {
-    window.location = "ERP.html";
+    window.location = "Cominsoon.html";
 }
 
 function ulogin() {
@@ -54,8 +54,8 @@ function ShowTime() {
 
 function Tips() {
     Swal.fire({
-        title: 'ERP SSO企業管理系統單簽測試',
-        text: '測試帳號：csudemo 測試密碼：guest',
+        title: 'ERP SSO 企管單簽測試',
+        text: '帳號：csudemo 密碼：guest',
         confirmButtonText: '關閉',
         showCloseButton: true,
         showClass: {
@@ -66,7 +66,6 @@ function Tips() {
         },
         imageWidth: 200,
         imageHeight: 200,
-        imageAlt: '貼心小提醒GIF',
         timer: 5000,
         footer: '這則通知將於 5 秒後自動關閉 或 手動點擊按鈕進行關閉',
     })

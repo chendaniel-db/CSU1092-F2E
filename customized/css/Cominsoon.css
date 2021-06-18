@@ -1,0 +1,20 @@
+body {
+    background: url('../../image/Cominsoon/Wallpaper.jpg') center center fixed;
+    background-size: cover;
+}
+
+.title {
+    color: white;
+    font-size:30px;
+}
+
+.main-section {
+    margin: 0 auto;
+    margin-top: 250px;
+    padding: 0;
+}
+
+.btn-outline-light{
+    border-radius:100px;
+    font-size:30px;
+}
