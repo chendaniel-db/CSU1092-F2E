@@ -10,7 +10,7 @@ function ulogin() {
     var userPass = document.getElementById("uPass").value;
 
 
-    if (userPass == "root" && userName == "root") {
+    if (userPass == "guest" && userName == "csudemo") {
         document.getElementById("logininfo").innerHTML = "登入成功 即將導向內部系統";
         timer = setTimeout('Redirect()', time * 1000);
     }
@@ -25,7 +25,7 @@ function ulogin() {
         return false;
     }
 
-    else if (userPass != "root" || userName != "root") {
+    else if (userPass != "guest" || userName != "csudemo") {
         document.getElementById("logininfo").innerHTML = "使用者名稱或密碼錯誤";
         return false;
     }
@@ -55,7 +55,7 @@ function ShowTime() {
 function Tips() {
     Swal.fire({
         title: 'ERP SSO企業管理系統單簽測試',
-        text: '測試帳號：root 測試密碼：root',
+        text: '測試帳號：guest 測試密碼：csudemo',
         confirmButtonText: '關閉',
         showCloseButton: true,
         showClass: {
