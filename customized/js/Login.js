@@ -51,3 +51,23 @@ function ShowTime() {
     document.getElementById('showbox').innerHTML = '系統目前時間：' + NowDate.toLocaleString() + '（' + dayNames[d] + '）';
     setTimeout('ShowTime()', 1);
 }
+
+function Tips() {
+    Swal.fire({
+        title: 'ERP SSO企業管理系統單簽測試',
+        text: '測試帳號：root 測試密碼：root',
+        confirmButtonText: '關閉',
+        showCloseButton: true,
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        },
+        imageWidth: 200,
+        imageHeight: 200,
+        imageAlt: '貼心小提醒GIF',
+        timer: 5000,
+        footer: '這則通知將於 5 秒後自動關閉 或 手動點擊按鈕進行關閉',
+    })
+}
