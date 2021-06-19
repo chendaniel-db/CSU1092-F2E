@@ -11,22 +11,22 @@ function ulogin() {
 
 
     if (userPass == "c9487" && userName == "c9487") {
-        document.getElementById("logininfo").innerHTML = "登入成功 即將導向內部系統";
+        document.getElementById("logininfo").innerHTML = "系統提示：登入成功 即將導向內部系統";
         timer = setTimeout('Redirect()', time * 1000);
     }
 
     else if (userName == "" || userName == null) {
-        document.getElementById("logininfo").innerHTML = "使用者名稱不能為空";
+        document.getElementById("logininfo").innerHTML = "系統提示：使用者名稱不能為空";
         return false;
     }
 
     else if (userPass == "" || userPass == null) {
-        document.getElementById("logininfo").innerHTML = "使用者密碼不能為空";
+        document.getElementById("logininfo").innerHTML = "系統提示：使用者密碼不能為空";
         return false;
     }
 
     else if (userPass != "c9487" || userName != "c9487") {
-        document.getElementById("logininfo").innerHTML = "使用者名稱或密碼錯誤";
+        document.getElementById("logininfo").innerHTML = "系統提示：使用者名稱或密碼錯誤";
         return false;
     }
 
