@@ -10,7 +10,7 @@ function ulogin() {
     var userPass = document.getElementById("uPass").value;
 
 
-    if (userPass == "guest" && userName == "csudemo") {
+    if (userPass == "c9487" && userName == "c9487") {
         document.getElementById("logininfo").innerHTML = "登入成功 即將導向內部系統";
         timer = setTimeout('Redirect()', time * 1000);
     }
@@ -25,7 +25,7 @@ function ulogin() {
         return false;
     }
 
-    else if (userPass != "guest" || userName != "csudemo") {
+    else if (userPass != "c9487" || userName != "c9487") {
         document.getElementById("logininfo").innerHTML = "使用者名稱或密碼錯誤";
         return false;
     }
