@@ -93,3 +93,43 @@ body {
         background-color: #5DBA9D;
         color: #FFFFFF;
     }
+
+.btn-primary {
+    background-color: #1c6288;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 7px 14px;
+    border: 1px solid white;
+    font-weight: bold;
+    opacity: .8;
+}
+
+    .btn-primary:hover {
+        background-color: #13445e;
+        border: 0;
+        border: 1px solid white;
+        opacity: .8;
+    }
+
+.btn-warning {
+    background-color: #AE8F00;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    padding: 7px 14px;
+    border: 1px solid white;
+    font-weight: bold;
+    opacity: .8;
+}
+
+    .btn-warning:hover {
+        background-color: #796400;
+        color: white;
+        border: 1px solid white;
+        font-weight: bold;
+        opacity: .8;
+    }
+
+marquee {
+    border-radius: 100px;
+}
