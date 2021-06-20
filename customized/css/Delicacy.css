@@ -20,6 +20,12 @@
     font-weight: bold;
 }
 
+.down-title {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 body::-webkit-scrollbar {
     width: 15px;
 }
@@ -39,6 +45,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    font-family: 微軟正黑體,arial !important;
 }
 
 .go-top {

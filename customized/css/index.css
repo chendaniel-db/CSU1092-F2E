@@ -10,6 +10,10 @@
     height: 500px;
 }
 
+.carousel-border {
+    border-radius: 30px;
+}
+
 .row-image {
     border-radius: 10px;
     background: none;
@@ -45,6 +49,7 @@ body {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    font-family: 微軟正黑體,arial !important;
 }
 
 .bear-radius {

@@ -1,7 +1,7 @@
 body {
-    font-family: 'arial';
     background: url('../../image/Login/Programming.jpg') center center fixed;
     background-size: cover;
+    font-family: ·L³n¥¿¶ÂÅé,arial!important;
 }
 
 .main-section {
@@ -61,7 +61,7 @@ body {
     }
 
 .form-input button {
-    width: 49%;
+    width: 47%;
     margin: 10px 0 25px;
 }
 

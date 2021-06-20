@@ -8,8 +8,8 @@ body {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    /*Gradual Setting = #e9defa ¡÷ #fbfcdb and -20deg*/
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    font-family: ·L³n¥¿¶ÂÅé,arial !important;
 }
 
     body::-webkit-scrollbar {
@@ -39,7 +39,6 @@ body {
     background-color: #fdfdfd;
     padding: 150px;
     border-radius: 15px;
-    /*Gradual Setting = #d299c2 ¡÷ #fef9d7 and to top*/
     background-image: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
 }
 
